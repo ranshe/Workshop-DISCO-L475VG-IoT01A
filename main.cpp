@@ -34,6 +34,7 @@
 
 
 
+
 // An event queue is a very useful structure to debounce information between contexts (e.g. ISR and normal threads)
 // This is great because things such as network operations are illegal in ISR, so updating a resource in a button's fall() function is not allowed
 EventQueue eventQueue;
@@ -47,7 +48,7 @@ QSPIFBlockDevice sd(PE_12, PE_13, PE_14, PE_15,PE_10,PE_11,0,8000000);
 
 // FATFileSystem fs("sd", &bd);
 
-LittleFileSystem fs("sd", &sd);
+LittleFileSystem fs("sd");
 
 // Declaring pointers for access to Mbed Cloud Client resources outside of main()
 MbedCloudClientResource *button_res;
@@ -120,6 +121,27 @@ void registered(const ConnectorClientEndpointInfo *endpoint) {
 
 int main(void) {
     printf("Starting Simple Mbed Cloud Client example\n");
+
+    printf("Checking SDCard is Formatted\r\n");
+    int err = fs.mount(&sd);
+    printf("%s\n", (err ? "Fail :(" : "OK"));
+    if (err) {
+        // Reformat if we can't mount the filesystem
+        // this should only happen on the first boot
+        printf("No filesystem found, formatting... ");
+        fflush(stdout);
+        err = fs.reformat(&sd);
+        printf("%s\n", (err ? "Fail :(" : "OK"));
+        if (err) {
+            error("error: %s (%d)\n", strerror(-err), err);
+        }
+    }
+    // err = fs.unmount();
+    // printf("%s\n", (err < 0 ? "Fail :(" : "OK"));
+    // if (err < 0) {
+    //     error("error: %s (%d)\n", strerror(-err), err);
+    // }
+
     printf("Connecting to the network using Wifi...\n");
 
     // Connect to the internet (DHCP is expected to be on)
