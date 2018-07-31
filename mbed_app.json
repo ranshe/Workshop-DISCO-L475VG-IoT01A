@@ -44,14 +44,6 @@
             "help": "Enable Developer mode to skip Factory enrollment",
             "value": 1
         },
-        "wifi-ssid": {
-            "help": "WiFi SSID",
-            "value": "\"casa-de-awesome-guest\""
-        },
-        "wifi-password": {
-            "help": "WiFi Password",
-            "value": "\"you are awesome\""
-        },
         "sotp-section-1-address": {
             "help": "Flash sector address for SOTP sector 1",
             "macro_name": "PAL_INTERNAL_FLASH_SECTION_1_ADDRESS",

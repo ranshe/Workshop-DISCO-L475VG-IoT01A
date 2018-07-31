@@ -32,6 +32,9 @@
 #include "ISM43362Interface.h"
 // #include "SPIFBlockDevice.h" // to use onboard spi flash
 
+#define WIFI_SSID       "mbed"
+#define WIFI_PASSWORD   "workshop-password"
+
 
 
 
@@ -145,7 +148,7 @@ int main(void) {
     printf("Connecting to the network using Wifi...\n");
 
     // Connect to the internet (DHCP is expected to be on)
-    nsapi_error_t status = net.connect(MBED_CONF_APP_WIFI_SSID, MBED_CONF_APP_WIFI_PASSWORD, (strlen(MBED_CONF_APP_WIFI_PASSWORD) > 1) ? NSAPI_SECURITY_WPA_WPA2 : NSAPI_SECURITY_NONE);
+    nsapi_error_t status = net.connect(WIFI_SSID, WIFI_PASSWORD, (strlen(WIFI_PASSWORD) > 1) ? NSAPI_SECURITY_WPA_WPA2 : NSAPI_SECURITY_NONE);
 
     if (status != 0) {
         printf("Connecting to the network failed %d!\n", status);
