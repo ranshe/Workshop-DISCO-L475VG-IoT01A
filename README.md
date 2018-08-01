@@ -1,4 +1,4 @@
-# Mbed Cloud Workshop - Connect service
+# Mbed Cloud Workshop - Connect Service
 
 ## Embedded Application
 
