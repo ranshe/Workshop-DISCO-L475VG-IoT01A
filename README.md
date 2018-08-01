@@ -16,9 +16,9 @@
 1. Run the app: `node app.js`
 1. Open `http://localhost:8080` in your browser
 1. You should now see a list of connected Mbed Cloud JavaScript Quickstart devices
-   <img width="946" src="https://user-images.githubusercontent.com/6963725/43549000-0fac4cdc-95a5-11e8-918a-53b4fca8a857.png">
+   <img width="946" src="/img1.png">
 1. If you open the Mbed Cloud portal (https://portal.mbedcloud.com/) you should also see your device listed under "Device directory" > "Devices"
-   <img width="835" src="https://user-images.githubusercontent.com/6963725/43548986-075795c8-95a5-11e8-95f0-a23acb071cde.png">
+   <img width="835" src="/img2.png">
 
 ### GET/PUT/POST to your device
 1. Subscribe to your board's simulated button presses by clicking on the checkbox next to "Subscribe" and then click the "Get presses (GET)" button
