@@ -4,8 +4,8 @@
 
 ### Prerequisites
 1. Install [Mbed CLI](https://os.mbed.com/docs/latest/tools/installation-and-setup.html)
-1. Register for an Mbed OS account (if you do not already have one): https://os.mbed.com/account/signup/
-1. Register for an Mbed Cloud account: http://cloud.mbed.com/quick-start
+1. Register for an [Mbed OS account](https://os.mbed.com/account/signup/) (if you do not already have one)
+1. Register for an [Mbed Cloud account](http://cloud.mbed.com/quick-start)
 1. Download the code: `mbed import https://github.com/BlackstoneEngineering/mbed-cloud-workshop-connect`
 
 ### Let's Code: Device to Dashboard
