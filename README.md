@@ -57,12 +57,12 @@
 1. Open `http://localhost:8080` in your browser
 1. You should now see a list of connected Mbed Cloud JavaScript Quickstart devices
    <img width="946" src="/img2.png">
-1. If you open the Mbed Cloud portal (https://portal.mbedcloud.com/) you should also see your device listed under "Device directory" > "Devices"
+1. If you open the Mbed Cloud portal (https://portal.mbedcloud.com/) you should also see your device listed under **Device directory** > **Devices**
    <img width="835" src="/img1.png">
 
 ### Let's Code: GET/PUT/POST to Device
-1. Subscribe to your board's simulated button presses by clicking on the checkbox next to "Subscribe" and then click the "Get presses (GET)" button
-1. Type `500:500:500:500` into the text box below "LED blink pattern"
+1. Subscribe to your board's simulated button presses by clicking on the checkbox next to **Subscribe** and then click **Get presses (GET)**
+1. Type `500:500:500:500` into the text box below **LED blink pattern**
    - This pattern indicates that the LED on the board will turn on for 500 ms, turn off for 500 ms, turn on for 500 ms, and then turn off for 500 ms (and then stay off)
-1. Click the "Update (PUT)" button
-1. Now click the orange "Blink (POST)" button and verify that your board's LED blinked twice
+1. Click **Update (PUT)**
+1. Now click **Blink (POST)** and verify that your board's LED blinked twice
