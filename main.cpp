@@ -20,8 +20,8 @@
 #include <stdio.h>
 #include <errno.h>
 
-#include "mbed-os/hal/qspi_api.h"
-#include "mbed-os/drivers/QSPI.h"
+#include "qspi_api.h"
+#include "QSPI.h"
 #include "qspi-blockdevice/QSPIFBlockDevice.h"
 #define DEVICE_QSPI
 
