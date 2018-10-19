@@ -32,8 +32,8 @@
 #include "ISM43362Interface.h"
 // #include "SPIFBlockDevice.h" // to use onboard spi flash
 
-#define WIFI_SSID       "mbed"
-#define WIFI_PASSWORD   "workshop-password"
+#define WIFI_SSID       "CHANGEME"
+#define WIFI_PASSWORD   "CHANGEME"
 
 
 
